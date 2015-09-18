@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
+import matplotlib.pyplot as plt
 
-This is a temporary script file.
-"""
+
 # criamos a variável carta com os números de 0 a 18 fora de ordem
 carta = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
 # imprimos lista original com a variável carta
 print("lista original:", carta)
 # atribuimos a variavel n os valores da variavel carta
 n = 20
+plt.figure()
+plt.plot(range(0,n), carta, 'ok')
+plt.savefig("bubble-inicio.png")
+
 # atribuimos ao indice i, o intervalo que varia de 0 a 18
 for i in range (0, n-1):
 # atribuimos ao indice j, o intervalo que varia entre i+1 a 19
@@ -32,4 +34,8 @@ print("lista em ordem crescente:", [carta])
 print("cinco menores valores:", carta[0:5])
 # imprime os cinco maiores valores da lista
 print("cinco maiores valores:", carta[n-1:n-6:-1])
- 
+
+plt.figure()
+plt.plot(range(0,n), carta, 'ok')
+plt.savefig("bubble-fim.png")
+
