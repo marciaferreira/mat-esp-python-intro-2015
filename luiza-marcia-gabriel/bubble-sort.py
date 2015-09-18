@@ -27,4 +27,9 @@ for i in range (0, n-1):
 # a carta j recebe o valor do arquivo temporario
             carta[j]=temp
 # imprime o texto lista em ordem crescente com os valores ordenados
- print ("lista em ordem crescente:", [carta])
+print("lista em ordem crescente:", [carta])
+# imprime os cinco menores valores da lista
+print("cinco menores valores:", carta[0:5])
+# imprime os cinco maiores valores da lista
+print("cinco maiores valores:", carta[n-1:n-6:-1])
+ 
